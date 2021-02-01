@@ -1,4 +1,4 @@
-"""DjangoRestAPI URL Configuration
+"""DjangoRestAPI_RR URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -20,7 +20,7 @@ from rest_framework_jwt.views import obtain_jwt_token, refresh_jwt_token
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/data/', include('accounts.api.urls')),
+    url(r'^api/data/', include('data.api.urls')),
     url(r'^api/auth/$', obtain_jwt_token),
     url(r'^api/auth/refresh/$', refresh_jwt_token),
 ]

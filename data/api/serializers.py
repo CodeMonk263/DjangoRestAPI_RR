@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from accounts.models import Data
+from data.models import Data
 
 class DataSerializer(serializers.ModelSerializer):
     class Meta:

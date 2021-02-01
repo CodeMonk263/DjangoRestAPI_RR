@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework import generics, mixins, permissions
 
 from .serializers import DataSerializer
-from accounts.models import Data
+from data.models import Data
 
 class DataListView(generics.ListCreateAPIView):
     serializer_class = DataSerializer
