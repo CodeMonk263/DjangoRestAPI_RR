@@ -3,8 +3,10 @@ certifi==2020.12.5
 Django==1.11.8
 django-filter==1.1.0
 djangorestframework==3.7.3
+djangorestframework-jwt==1.11.0
 importlib-metadata==3.4.0
 Markdown==3.3.3
+PyJWT==1.7.1
 pytz==2020.5
 sqlparse==0.4.1
 typing-extensions==3.7.4.3
