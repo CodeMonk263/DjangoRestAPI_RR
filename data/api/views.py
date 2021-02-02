@@ -3,8 +3,15 @@ from rest_framework.authentication import SessionAuthentication
 from rest_framework.response import Response
 from rest_framework import generics, mixins, permissions
 
-from .serializers import DataSerializer
-from data.models import Data
+from .serializers import DataSerializer, InfoSerializer
+from data.models import Data, Info
+
+class InfoAPIView(generics.ListCreateAPIView):
+    serializer_class = InfoSerializer
+    queryset = Info.objects.all()
+
+    authentication_classes = []
+    permission_classes = []
 
 class DataListView(generics.ListCreateAPIView):
     serializer_class = DataSerializer

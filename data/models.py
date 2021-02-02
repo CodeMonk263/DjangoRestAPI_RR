@@ -27,3 +27,6 @@ class Data(models.Model):
     class Meta:
         verbose_name = 'Data'
         verbose_name_plural = 'Data'
+
+class Info(models.Model):
+    help = models.CharField(max_length=500)

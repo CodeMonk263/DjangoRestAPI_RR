@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from .views import DataListView, DataDetailView
+from .views import DataListView, DataDetailView, InfoAPIView
 
 urlpatterns = [
     url(r'^$', DataListView.as_view()),
     url(r'^(?P<arg>\d+)/$', DataDetailView.as_view()),
-
+    url(r'^help/', InfoAPIView.as_view()),
+    
 ]

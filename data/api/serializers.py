@@ -1,6 +1,12 @@
 from rest_framework import serializers
 
-from data.models import Data
+from data.models import Data, Info
+
+class InfoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Info
+        fields = '__all__'
+        read_only_fields = ['help']
 
 class DataSerializer(serializers.ModelSerializer):
     class Meta:
