@@ -20,6 +20,7 @@ API hosted live [here](http://codemonk263.pythonanywhere.com/posts/)
 3. Postman works best for API testing.
 4. For accessing/creating posts via JWT token, the header should be {"Authentication" : "JWT <token_code>"}.
 5. Access all posts via GET request to [here](http://codemonk263.pythonanywhere.com/posts/) and for creating a new post POST request to [here](http://codemonk263.pythonanywhere.com/posts/) with the json data as {"title":"whatever title", "body":"whatever body"} and also the header as mentioned before.
+6. For registration, the POST request to [here](http://codemonk263.pythonanywhere.com/register) should have json of the form - {"username":"whatever username", "password":"whatever password", "password2":"same as whatever password"}.
 
 ## Author
 Shaurya Vijayvargiya
