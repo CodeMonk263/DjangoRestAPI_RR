@@ -18,9 +18,10 @@ API hosted live [here](http://codemonk263.pythonanywhere.com/posts/)
 1. Data cannot be accessed with JWT token which can be obtained at the time of registration and also when logging in.
 2. To edit/delete a post, go to BASE_URL/<id_num>.
 3. Postman works best for API testing.
-4. For accessing/creating posts via JWT token, the header should be {"Authentication" : "JWT <token_code>"}.
+4. For accessing/creating posts via JWT token, the header should be {"Authorization" : "JWT <token_code>"}.
 5. Access all posts via GET request to [here](http://codemonk263.pythonanywhere.com/posts/) and for creating a new post POST request to [here](http://codemonk263.pythonanywhere.com/posts/) with the json data as {"title":"whatever title", "body":"whatever body"} and also the header as mentioned before.
 6. For registration, the POST request to [here](http://codemonk263.pythonanywhere.com/register) should have json of the form - {"username":"whatever username", "password":"whatever password", "password2":"same as whatever password"}.
+7. For login, the POST request to [here](http://codemonk263.pythonanywhere.com/login/) with the body as {"username":"xyz","password":"pwd123"} has to be provided.
 
 ## Author
 Shaurya Vijayvargiya
