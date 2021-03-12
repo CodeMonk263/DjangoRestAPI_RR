@@ -22,6 +22,7 @@ API hosted live [here](http://codemonk263.pythonanywhere.com/posts/)
 5. Access all posts via GET request to [here](http://codemonk263.pythonanywhere.com/posts/) and for creating a new post POST request to [here](http://codemonk263.pythonanywhere.com/posts/) with the json data as {"title":"whatever title", "body":"whatever body"} and also the header as mentioned before.
 6. For registration, the POST request to [here](http://codemonk263.pythonanywhere.com/register) should have json of the form - {"username":"whatever username", "password":"whatever password", "password2":"same as whatever password"}.
 7. For login, the POST request to [here](http://codemonk263.pythonanywhere.com/login/) with the body as {"username":"xyz","password":"pwd123"} has to be provided.
+8. For refreshing token, POST request to [here](http://codemonk263.pythonanywhere.com/refresh/) with body as {"token":"kfsbgkjfgfv....."} has to be provided.
 
 ## Author
 Shaurya Vijayvargiya
